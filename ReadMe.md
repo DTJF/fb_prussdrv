@@ -10,7 +10,7 @@ Black or White hardware](http://www.beaglebone.org) ).
 This package contains
 
 - The customized PRU assemble source code (in folder *util*s) containing
-  FB output capability (option -y)
+  FB output capability (new option -y)
 
 - FB example code to test (in folder *examples*)
 
@@ -18,7 +18,7 @@ This package contains
 
 - The binaries (in folder *bin*) of
   - the library libprussdrv,
-  - the devive tree overlay and
+  - the device tree overlay and
   - the (LINUX-arm7hf) pasm assembler
 
 The libprussdrv library supports
@@ -57,13 +57,16 @@ http://www.freebasic.net/forum/viewtopic.php?f=5&t=23355 for details
 and installtion instructions.
 
 Then you can download and extract this package to your Beaglebone and
-add the fb_prussdrv extension by executing those commands (in package
-root directory)
+add the fb_prussdrv extension by executing those commands (in the
+directory where you want to download the package)
 
 ~~~{.sh}
+wget https://github.com/DTJF/fb_prussdrv/archive/master.zip
+unzip master.zip
+cd fb_prussdrv-master/
 sudo su
-cp bin/pasm /usr/bin
-cp bin/libprussdrv.* /usr/lib
+cp bin/pasm /usr/local/bin
+cp bin/libprussdrv.* /usr/local/lib
 ldconfig
 mkdir /usr/include/freebasic/BBB
 cp include/* /usr/include/freebasic/BBB
@@ -71,9 +74,12 @@ exit
 ~~~
 
 When you already installed am335x_pru_package, you can omit the
-libprussdrv part:
+libprussdrv part, but must override the pasm binary:
 
 ~~~{.sh}
+wget https://github.com/DTJF/fb_prussdrv/archive/master.zip
+unzip master.zip
+cd fb_prussdrv-master/
 sudo su
 cp bin/pasm /usr/bin
 mkdir /usr/include/freebasic/BBB
