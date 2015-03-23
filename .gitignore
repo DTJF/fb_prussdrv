@@ -1,0 +1,4 @@
+$ cat .gitignore
+
+examples/user_leds
+examples/PRU_memAccessPRUDataRam
