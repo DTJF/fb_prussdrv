@@ -3,8 +3,9 @@ FreeBASIC PrussDrv Kit
 
 Welcome to *fb_prussdrv*, a fork of the package am335x_pru_package
 containing adaptions for usage with FreeBAISC (FB) programming
-language. This package is designed to control the Programmable Realtime
-Unit SubSystem (= PRUSS) in ARM CPUs by FB source code.
+language. It's designed to control the Programmable Realtime Unit
+SubSystem (= PRUSS) in ARM CPUs by FB source code (ie. on [Beaglebone
+Black or White hardware](http://www.beaglebone.org) ).
 
 This package contains
 
@@ -55,8 +56,9 @@ You need the FreeBASIC compiler to make use of this package. See
 http://www.freebasic.net/forum/viewtopic.php?f=5&t=23355 for details
 and installtion instructions.
 
-Then you can add the fb_prussdrv extension by executing those commands
-(in package root directory)
+Then you can download and extract this package to your Beaglebone and
+add the fb_prussdrv extension by executing those commands (in package
+root directory)
 
 ~~~{.sh}
 sudo su
@@ -68,8 +70,8 @@ cp include/* /usr/include/freebasic/BBB
 exit
 ~~~
 
-When you already installed the am335x_pru_package package, you can omit
-the libprussdrv part:
+When you already installed am335x_pru_package, you can omit the
+libprussdrv part:
 
 ~~~{.sh}
 sudo su
