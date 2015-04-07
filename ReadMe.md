@@ -97,7 +97,7 @@ To test the PRU assembler type
 pasm
 ~~~
 
-and yoou should see output like (note the new option `y  - Create
+and you should see output like (note the new option `y  - Create
 'FreeBasic ...`)
 
 ~~~{.sh}
