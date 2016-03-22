@@ -31,7 +31,7 @@ The libprussdrv library supports
 Licence
 =======
 
-Copyright &copy; 2015 by DTJF
+Copyright &copy; 2015-2016 by DTJF
 
 The source code of this bundle is free software; you can redistribute
 it and/or modify it under the terms of the GNU General Public License
@@ -91,7 +91,7 @@ exit
 pasm Test
 ---------
 
-To test the PRU assembler type
+In order to test the PRU assembler, type
 
 ~~~{.sh}
 pasm
@@ -131,17 +131,16 @@ Usage: pasm [-V#EBbcmLldz] [-Dname=value] [-Cname] InFile [OutFileBase]
 Header Test
 -----------
 
-To test the header installation compile and run the example source code
+In order to test the header installation and to compile the example
+source code execute
 
 ~~~{.sh}
 cd examples
 fbc -w all user_leds.bas
-sudo ./user_leds.bas
 fbc -w all PRU_memAccessPRUDataRam.bas
-sudo ./PRU_memAccessPRUDataRam.bas
 ~~~
 
-You should see output like (user_leds)
+When running the first example, you should see output like
 
 ~~~{.sh}
 $ sudo ./user_leds
@@ -150,11 +149,11 @@ $ sudo ./user_leds
 	INFO: example running, press any key.
 ~~~
 
-and the user LEDs should light up and own, one after the other (system
-interupts will interfere with the example control of the LEDs). Press
+and the user LEDs should light up and down, one after the other (system
+interupts may interfere with the example control of the LEDs). Press
 any key to quit the example.
 
-And you should see output like (PRU_memAccessPRUDataRam)
+Running the second example you should see output like
 
 ~~~{.sh}
 $ sudo ./PRU_memAccessPRUDataRam
