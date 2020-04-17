@@ -31,7 +31,7 @@ The libprussdrv library supports
 Licence
 =======
 
-Copyright &copy; 2015-2016 by DTJF
+Copyright &copy; 2015-2020 by DTJF
 
 The source code of this bundle is free software; you can redistribute
 it and/or modify it under the terms of the GNU General Public License

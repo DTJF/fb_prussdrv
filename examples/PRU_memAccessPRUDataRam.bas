@@ -2,7 +2,7 @@
 '' the data ram from host (ARM) and PRU.
 
 '' Licence: GPLv3, translated from C source by
-'' (C) 2014 by Thomas{ DoT ]Freiherr[ aT ]gmx[ dOt }net
+'' (C) 2014-2020 by Thomas{ DoT ]Freiherr[ aT ]gmx[ dOt }net
 
 '' Here's the original licence info:
 /'

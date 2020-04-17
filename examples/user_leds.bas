@@ -2,7 +2,7 @@
 '' from PRU.
 
 '' Licence GPLv3
-'' (C) 2014 by Thomas{ DoT ]Freiherr[ aT ]gmx[ dOt }net
+'' (C) 2014-2020 by Thomas{ DoT ]Freiherr[ aT ]gmx[ dOt }net
 
 '' Thanks Charles Steinkuehler for his PD pasm code (user_leds.p).
 
